@@ -1,0 +1,14 @@
+{
+	"name": "nyc-bug-demo",
+	"description": "demonstrating bug in NYC",
+	"version": "0.0.0",
+	"scripts": {
+		"test": "node --trace-warnings test.js",
+		"coverage": "nyc -t './coverage/.nyc_output' --reporter=lcov --reporter=html --reporter=text --exclude=test.js --cache=false node test.js"
+	},
+	"devDependencies": {
+		"nyc": "~15.1.0"
+	},
+	"author": "Kyle Simpson <getify@gmail.com>",
+	"license": "MIT"
+}
